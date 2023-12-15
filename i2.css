@@ -2,13 +2,31 @@
     box-sizing: border-box;
 }
 
+.prevbtn {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.next-pre-buttons {
+    text-align: center;
+    padding: 10px;
+}
+
+.nextbtn {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
 .navbar {
     width: 100%;
 }
+
 .container-div {
     display: none;
-     
-  }
+
+}
 
 .title {
     width: 100%;
@@ -19,6 +37,11 @@
 }
 
 .titlename {
+    font-weight: bold;
+    margin: auto;
+    width: 100%;
+    padding-top: 50px;
+    font-size: 35px;
     font-weight: bold;
     margin: auto;
     width: 100%;
@@ -59,31 +82,30 @@ body {
     /* float: left; */
     cursor: pointer;
     position: absolute;
-    top: 86%;
-    width: auto;
-    padding: 16px;
-    color: wheat;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    left: 17%;
-}
-
-.next {
-
-    cursor: pointer;
-    position: absolute;
-    top: 86%;
+    top: 68%;
     width: auto;
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 91px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-    right: 17%;
+    user-select: none;
+    left: 19%;
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 68%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 91px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    right: 19%;
     user-select: none;
 }
 
@@ -163,15 +185,15 @@ body {
 }
 
 .box5 {
+    margin-top: 30px;
     width: 100%;
-    height: 300px;
+    height: 30%;
     background-color: #f3f3f3;
     padding: 20px;
 }
 
 .box2 {
 
-    margin-top: 45px;
     width: 100%;
     /* display: inline; */
 }
@@ -179,11 +201,12 @@ body {
 .ss8 {
     width: 14%;
     margin-top: -8%;
-    height: 252px;
+    height: 47%;
     position: absolute;
     right: 17%;
     margin-right: 1%;
 }
+
 .shopnow {
     margin-top: 20px;
     color: #fff;
@@ -201,9 +224,66 @@ body {
     font-size: small;
 }
 
+.footer {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
+
+
+
 
 /* Apply responsive styles */
 @media only screen and (max-width: 768px) {
+    .next .prev {
+        display: none;
+    }
+
+    .prevbtn {
+        background: cadetblue;
+        /* border: none; */
+        color: black;
+        width: 32%;
+    }
+
+    .nextbtn {
+        background: cadetblue;
+        /* border: none; */
+        color: black;
+        width: 32%;
+    }
+
+    .ss7-img {
+        margin-top: 10%;
+        width: 96%;
+        height: auto;
+    }
+
+    body,
+    h1,
+    h2,
+    p {
+        font-size: 9px;
+        margin: 0;
+        padding: 0;
+    }
 
     /* shop button  */
     .shopnow {
@@ -242,7 +322,6 @@ body {
     .box2 {
         font-size: 8px;
         /* margin-left: 99px; */
-        margin-top: 45px;
         width: 100%;
         /* display: inline; */
     }
@@ -264,13 +343,25 @@ body {
     }
 
     /* Adjust font sizes, margins, paddings, etc. for smaller screens */
-    .name {width: 630%;
+    .name {
+        width: 630%;
         font-size: 32px;
     }
 
     .titlename {
+        /* text-align: center; */
+        /* padding-left: 120px; */
         font-weight: bold;
-       
+        margin: auto;
+        width: 100%;
+        padding-top: 50px;
+        font-size: -12px;
+    }
+
+    #A {
+        font-size: 33px;
+        color: red;
+        display: contents;
     }
 
     .box1 {
@@ -307,14 +398,7 @@ body {
         text-align: center;
         display: flex;
     }
-    .titlename {
-        /* padding-left: 120px; */
-        font-weight: bold;
-        margin: auto;
-        width: 100%;
-        /* padding-top: 50px; */
-        font-size: 35px;
-    }
+
 
     /* You can add more styles for other elements as needed */
 }
@@ -347,10 +431,11 @@ body {
     width: 100%;
     height: auto;
 }
+
 .text2 {
     font-family: sans-serif;
     color: white;
-  }
+}
 
 /* Add more responsive styles for other sections as needed */
 /* ... */
@@ -364,30 +449,26 @@ body {
     background-color: black;
     padding: 0px;
 }
+
 /* Define the layout for the footer content on smaller screens */
 .content3 {
     display: flex;
     flex-wrap: wrap;
 }
-.buttons1{
+
+.buttons1 {
     padding: 50px;
     text-align: center;
 }
-.name{
+
+.name {
     display: inline;
 
 }
 
-.titlename {
-    padding-left: 120px;
-    font-weight: bold;
-    margin: auto;
-    width: 100%;
-    padding-top: 50px;
-    font-size: 35px;
-}
 
-#A{
+
+#A {
     color: red;
     display: contents;
 }
@@ -439,7 +520,7 @@ body {
 
 #contentsigns {
     margin-left: 100px;
-    
+
 }
 
 
@@ -449,12 +530,13 @@ body {
     width: 35%;
     padding: 9px;
 }
+
 .emailinput {
     display: block;
     margin-top: -56px;
 }
 
- 
+
 .sub {
     width: 12%;
     padding: 10px;
@@ -463,36 +545,45 @@ body {
     opacity: 0.5;
     background-color: rgb(247, 0, 0);
 }
+
 .check {
     margin-left: 50%;
 }
-.sign-2{
+
+.sign-2 {
     padding-top: 20px;
 }
 
 .contectus {
+    margin-top: -12px;
+    text-align: justify;
     margin-right: 20px;
     padding: 5px;
-    width: 350px;
+    width: 100%;
     height: fit-content;
 }
+
 .akiracontent {
-    margin-right: 20px;
-    width: 294px;
+    /* margin-right: 20px; */
+    width: 100%;
     height: fit-content;
     padding: 5px;
 }
+
 .information {
+    text-align: justify;
     margin-right: 20px;
-    width: 250px;
+    width: 100%;
     height: fit-content;
     padding: 5px;
 }
+
 .myaccount {
     margin-right: 20px;
-    width: 250px;
+    width: 100%;
     height: fit-content;
     padding: 5px;
+    text-align: justify;
 }
 
 .name2 {
@@ -503,43 +594,109 @@ body {
     font-weight: 900;
     color: white;
 }
+
 .content3 {
     display: flex;
     flex-wrap: nowrap;
 }
+
+.company {
+    margin-right: 20px;
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    text-align: justify;
+
+}
+
+.footerdiv {
+    background-color: black;
+}
+
 /* Adjust styles for smaller screens */
 @media only screen and (max-width: 768px) {
+    .akiracontent {
+        /* margin-right: 20px; */
+        width: 200%;
+        height: fit-content;
+        padding: 5px;
+    }
+
+    .contectus {
+        text-align: justify;
+        margin-right: 20px;
+        padding: 5px;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .slideshow-container {
+        margin-top: -70px;
+        max-width: 100%;
+    }
+
+    .box5 {
+        width: 100%;
+        height: 30%;
+        background-color: #f3f3f3;
+        padding: 20px;
+        /* padding-top: 1px; */
+    }
+
+    .next {
+        display: none;
+    }
+
+    .prev {
+        display: none;
+    }
+
+    .next-pre-buttons {
+        text-align: center;
+        padding: 10px;
+    }
+
     .dropbtn2 {
         background: transparent;
         border: none;
-     display: none;
+        display: none;
         margin-top: 15px;
     }
-    .bar1, .bar2, .bar3 {
+
+    .bar1,
+    .bar2,
+    .bar3 {
         width: 35px;
         height: 5px;
         background-color: #333;
         margin: 6px 0;
         transition: 0.4s;
-      }
-      
-      .change .bar1 {
+    }
+
+    .change .bar1 {
         transform: translate(0, 11px) rotate(-45deg);
-      }
-      
-      .change .bar2 {opacity: 0;}
-      
-      .change .bar3 {
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
         transform: translate(0, -11px) rotate(45deg);
-      }
+    }
+
     .container-div {
-        margin-left: 336px;
-    display: inline-block;
-    cursor: pointer;
-      }
+        margin-right: 20px;
+        float: right;
+        /* margin-left: 336px; */
+        display: inline-block;
+        cursor: pointer;
+    }
+
     .content3 {
         flex-direction: column;
     }
+
     .name2 {
         font-size: 34px;
         display: inline-block;
@@ -548,12 +705,16 @@ body {
         font-weight: 900;
         color: white;
     }
+
     .contectus {
-        margin-right: 20px;
-        padding: 16px;
+        /* text-align: justify; */
+        /* margin-right: 20px; */
+        /* padding: 16px; */
         width: 100%;
         height: fit-content;
+        font-size: 14px;
     }
+
     .bgbox {
         font-family: none;
         font-size: 10px;
@@ -562,29 +723,42 @@ body {
         padding: 40px;
         text-align: center;
     }
+
     .myaccount {
-    margin-right: 20px;
-    width: 100%;
-    height: fit-content;
-    padding: 5px;
-}
-    .information {
         margin-right: 20px;
         width: 100%;
         height: fit-content;
         padding: 5px;
     }
-    .akiracontent {
-        margin-right: 20px;
-        width: 294px;
+
+    .text2 {
+        font-size: large;
+        font-family: sans-serif;
+        color: white;
+    }
+
+    .information {
+        text-align: justify;
+        /* margin-right: 20px; */
+        width: 100%;
         height: fit-content;
         padding: 5px;
+        font-size: 14px;
     }
+
+    .akiracontent {
+        /* margin-right: 20px; */
+        width: 100%;
+        height: fit-content;
+        /* padding: 5px; */
+    }
+
     .sign-up {
         /* margin-left: 99px; */
         /* margin-top: 55px; */
         /* display: inline; */
     }
+
     .fitdiv {
         display: none;
         width: 80%;
@@ -627,7 +801,6 @@ body {
 
     .ss8 {
         width: 14%;
-        margin-top: -10%;
         height: 23%;
         position: absolute;
         right: 9%;
