@@ -199,14 +199,13 @@ body {
 }
 
 .ss8 {
-    width: 14%;
+    width: 140px;
+    height: 192px;
     margin-top: -8%;
-    height: 47%;
     position: absolute;
-    right: 17%;
-    margin-right: 1%;
+    right: 18%;
+    /* margin-right: 1%; */
 }
-
 .shopnow {
     margin-top: 20px;
     color: #fff;
@@ -769,7 +768,6 @@ body {
     }
 
     .collection {
-        margin-top: 53px;
         font-family: sans-serif;
         color: gray;
         text-align: center;
@@ -800,8 +798,8 @@ body {
     }
 
     .ss8 {
-        width: 14%;
-        height: 23%;
+        width:45px;
+        height: fit-content;
         position: absolute;
         right: 9%;
         margin-right: 1%;
